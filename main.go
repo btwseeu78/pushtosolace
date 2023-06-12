@@ -48,7 +48,7 @@ func main() {
 		panic(err)
 	}
 	fmt.Println("Direct Publisher running? ", directPublisher.IsRunning())
-	fmt.Println("\n===Interrupt (CTR+C) to stop publishing===\n")
+	fmt.Println("\n===Interrupt (CTR+C) to stop publishing===")
 	messageBody := "Hello from Go Direct Publisher Sample"
 	messageBuilder := messagingService.MessageBuilder().
 		WithProperty("application", "samples").
